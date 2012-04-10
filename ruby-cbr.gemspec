@@ -16,4 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Ruby::Cbr::VERSION
 
   gem.add_development_dependency 'rspec', '~> 2.9'
+  gem.add_development_dependency 'fakefs', '~> 0.4'
+  gem.add_dependency 'activesupport', '~> 3.2'
 end
