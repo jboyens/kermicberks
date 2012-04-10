@@ -3,9 +3,9 @@ require File.expand_path('../lib/ruby-cbr/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["JR Boyens"]
-  gem.email         = ["jr.boyens@chacha.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.email         = ["jboyens@fooninja.org"]
+  gem.description   = %q{Ruby lib for reading CBR/CBZ (Comic Book Archives)}
+  gem.summary       = %q{See description}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "ruby-cbr"
   gem.require_paths = ["lib"]
   gem.version       = Ruby::Cbr::VERSION
+
+  gem.add_development_dependency 'rspec', '~> 2.9'
 end
