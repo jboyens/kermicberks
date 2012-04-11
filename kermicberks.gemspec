@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/ruby-cbr/version', __FILE__)
+require File.expand_path('../lib/kermicberks/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["JR Boyens"]
@@ -11,11 +11,14 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "ruby-cbr"
+  gem.name          = "kermicberks"
   gem.require_paths = ["lib"]
-  gem.version       = Ruby::Cbr::VERSION
+  gem.version       = KermicBerks::VERSION
 
   gem.add_development_dependency 'rspec', '~> 2.9'
   gem.add_development_dependency 'fakefs', '~> 0.4'
+  gem.add_development_dependency 'awesome_print', '~> 1.0'
+  gem.add_development_dependency 'autotest'
+
   gem.add_dependency 'activesupport', '~> 3.2'
 end
