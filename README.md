@@ -1,4 +1,4 @@
-# Kermicberks
+# KermicBerks
 
 TODO: Write a gem description
 
